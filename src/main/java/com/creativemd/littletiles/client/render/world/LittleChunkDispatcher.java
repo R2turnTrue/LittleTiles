@@ -56,6 +56,10 @@ public class LittleChunkDispatcher {
     private static Field dynamicLightUpdate = ReflectionHelper.findField(RenderChunk.class, "dynamicLightUpdate");
     
     private static Minecraft mc = Minecraft.getMinecraft();
+
+    static {
+        System.out.println("loading");
+    }
     
     public static void addTileEntity(List<TileEntityLittleTiles> tiles, TileEntity te) {
         if (te instanceof TileEntityLittleTiles)

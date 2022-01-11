@@ -7,21 +7,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import com.creativemd.creativecore.common.utils.type.HashMapList;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeBox;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeConnected;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeCurve;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeCurveWall;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeCylinder;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeInnerCorner;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeOuterCorner;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapePillar;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapePolygon;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapePyramid;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeSlice;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeSphere;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeTile;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeType;
-import com.creativemd.littletiles.common.util.shape.type.LittleShapeWall;
+import com.creativemd.littletiles.common.util.shape.type.*;
 
 public class ShapeRegistry {
     
@@ -93,6 +79,8 @@ public class ShapeRegistry {
         registerShape("cylinder", new LittleShapeCylinder(), ShapeType.SHAPE);
         registerShape("sphere", new LittleShapeSphere(), ShapeType.SHAPE);
         registerShape("pyramid", new LittleShapePyramid(), ShapeType.SHAPE);
+
+        registerShape("cone", new LittleShapeCone(), ShapeType.SHAPE);
         
     }
     
